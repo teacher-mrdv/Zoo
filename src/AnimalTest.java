@@ -9,7 +9,7 @@ public class AnimalTest
         baah.talk();
 
         System.out.println("Dog");
-        Dog snoop = new Dog("Canine", 'm', 2020,
+        Dog snoop = new Dog("Canis Familiaris", 'm', 2020,
                 "chihuahua");
 
         System.out.println(snoop);

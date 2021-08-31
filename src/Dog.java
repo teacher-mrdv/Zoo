@@ -23,6 +23,10 @@ public class Dog extends Animal
     {   System.out.println("Bow wow");
     }
 
+    public void chase()
+    {   System.out.println(super.getName() + " is chasing its own tail");
+    }
+
     @Override
     public String toString()
     {   return super.toString() + "\tbreed: " + breed;

@@ -1,13 +1,13 @@
 public class Animal
 {
+    private String name;
     private char gender;
-    private String species;
     private int yob;
 
-    public Animal(String species, char gender, int yob)
+    public Animal(String name, char gender, int yob)
     {
         this.gender = gender;
-        this.species = species;
+        this.name = name;
         this.yob = yob;
     }
 
@@ -21,14 +21,14 @@ public class Animal
         this.gender = Character.toUpperCase(gender);
     }
 
-    public String getSpecies()
+    public String getName()
     {
-        return species;
+        return name;
     }
 
-    public void setSpecies(String species)
+    public void setName(String name)
     {
-        this.species = species;
+        this.name = name;
     }
 
     public int getYob()
@@ -54,7 +54,7 @@ public class Animal
     @Override
     public String toString()
     {
-        return "Animal: " + species +
+        return "Animal: " + name +
                 "\tgender: " + gender +
                 "\tyob: " + yob;
     }
