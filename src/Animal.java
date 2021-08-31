@@ -5,50 +5,41 @@ public class Animal
     private int yob;
 
     public Animal(String name, char gender, int yob)
-    {
-        this.gender = gender;
+    {   this.gender = Character.toUpperCase(gender);
         this.name = name;
         this.yob = yob;
     }
 
     public char setGender()
-    {
-        return gender;
+    {   return gender;
     }
 
     public void setGender(char gender)
-    {
-        this.gender = Character.toUpperCase(gender);
+    {   this.gender = Character.toUpperCase(gender);
     }
 
     public String getName()
-    {
-        return name;
+    {   return name;
     }
 
     public void setName(String name)
-    {
-        this.name = name;
+    {   this.name = name;
     }
 
     public int getYob()
-    {
-        return yob;
+    {   return yob;
     }
 
     public void setYob(int yob)
-    {
-        this.yob = yob;
+    {   this.yob = yob;
     }
 
     public void eat()
-    {
-        System.out.println("Animals eat.");
+    {   System.out.println("Animals eat.");
     }
 
     public void talk()
-    {
-        System.out.println("Animals can't talk!");
+    {   System.out.println("Animals can't talk!");
     }
 
     @Override
